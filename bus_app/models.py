@@ -25,4 +25,17 @@ class Bus_Route(models.Model):
     distance_km = models.FloatField()
     
     def __str__(self):
-        return f"{self.origin} to {self.destination}: {self.base_fare} (Base), {self.peak_fare} (Peak)"
+        return f"{self.origin} to {self.destination}: {self.fare.base_fare} (Base), {self.fare.peak_fare} (Peak)"
+
+class Zone(models.Model):
+    name = models.CharField(max_length = 4)
+    
+    def __str__(self):
+        return self.name
+
+class Stage(models.Model):
+    name = models.CharField(max_length = 50)
+    zone = models.ForeignKey(Zone, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.name

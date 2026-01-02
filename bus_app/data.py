@@ -1,7 +1,7 @@
 final_stop = "Nairobi town", "cbd"
 saccos = ["super metro", "metro trans", "enabled shuttle", "K-Trans", "Ngong T. Sacco"]
 Boarding_area = "Ngong Terminus"
-stages = ["Vet(Veterinary) View", "Olepolos", "Embulbul", "Shell", "Rubis", "Karen", "St. Christopher", "Lenana",
+stage_names = ["Vet(Veterinary) View", "Olepolos", "Embulbul", "Shell", "Rubis", "Karen", "St. Christopher", "Lenana",
         "Race course", "Kenol", "Corner", "Junction Mall", "Impala", "St. Hannah's", "Posta", "Adam's Arcade",
         "Prestige", "Coptic", "Kenyatta", "Traffic", "Library", "Community", "Serena", "GPO", "Archives"]
 stop_zones = {
