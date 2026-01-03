@@ -9,7 +9,7 @@ from .data import stage_names
 # Create your views here.
 peak_hours = [
     (time(16, 0), time(20, 0)),
-    (time(6, 0), time(10))
+    (time(6, 0), time(9,0))
 ]
 
 def is_peak_time(current_time, base_fare, peak_fare):
